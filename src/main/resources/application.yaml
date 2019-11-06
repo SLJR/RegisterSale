@@ -1,0 +1,18 @@
+#Configurar la persistencia con Hibernate
+#spring:
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/fmagnolia?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC
+#    username: root
+#    password: 
+    #Clase dentro del jar JDBC 
+#    driver-class-name: com.mysql.jdbc.Driver
+#  jpa: 
+#    hibernate:
+#      ddl-auto: create-drop
+#      generate-ddl: true 
+#    show-sql: true
+    
+
+    
+    
+    
