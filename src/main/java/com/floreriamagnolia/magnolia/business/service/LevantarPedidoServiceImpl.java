@@ -44,10 +44,6 @@ public class LevantarPedidoServiceImpl implements ILevantarPedidoService {
 		
 	}	
 	
-	@Override
-	public List<LevantarPedido> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 }

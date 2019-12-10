@@ -2,6 +2,7 @@ package com.floreriamagnolia.magnolia.business.service;
 
 import java.sql.Date;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,11 +11,14 @@ import org.springframework.transaction.annotation.Transactional;
 import com.floreriamagnolia.magnolia.business.repository.IPedidoRepository;
 import com.floreriamagnolia.magnolia.model.Cliente;
 import com.floreriamagnolia.magnolia.model.Pedido;
+import com.floreriamagnolia.magnolia.view.controller.PedidoController;
 import com.floreriamagnolia.magnolia.view.dto.PedidoDTO;
 
 @Service
 public class PedidoServiceImpl implements IPedidoService{
 	
+    private static final Logger LOGGER = Logger.getLogger(PedidoController.class.getName());
+    
 	@Autowired
 	private IPedidoRepository repository;
 	
@@ -70,8 +74,9 @@ public class PedidoServiceImpl implements IPedidoService{
 
 	@Transactional(readOnly = true)
 	@Override
-	public List<Pedido> findAll() {
-		return this.repository.findAll();
+	public List<Pedido> encotrarPedidos() {
+		LOGGER.info("Se ejecuto metodo encotrarPedidos() con @QUERY ....");
+		return this.repository.encotrarPedidos();
 	}
 
 	

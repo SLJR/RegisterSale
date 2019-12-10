@@ -8,7 +8,6 @@ import com.floreriamagnolia.magnolia.view.dto.LevantarPedidoDTO;
 public interface ILevantarPedidoService {
 	
 	public void crearLevantarPedido(LevantarPedidoDTO levantarPedidoDTO);
-	public List<LevantarPedido> findAll();
 	
 
 	

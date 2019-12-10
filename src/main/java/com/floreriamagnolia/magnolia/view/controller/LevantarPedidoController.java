@@ -26,7 +26,11 @@ public class LevantarPedidoController {
 	public boolean crearLevantarPedido(@RequestBody LevantarPedidoDTO levantarPedidoDTO) {
 		
 		try {
+			LOGGER.info("##########################################");
+			
 			this.service.crearLevantarPedido(levantarPedidoDTO);
+			LOGGER.info("##########################################");
+
 			return true;
 		} catch (Exception e) {
 			LOGGER.info("ERROR: "+ e);
@@ -35,6 +39,7 @@ public class LevantarPedidoController {
 		}
 
 	}
+	
 
 	
 }

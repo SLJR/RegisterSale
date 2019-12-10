@@ -13,7 +13,7 @@ public interface IPedidoService {
 	public void deletePedido(Long idPedido);
 	public Pedido findByIdPedido(Long idPedido);
 	public Pedido findByFechaEntraga(Date fechaEntraga);
-	public List<Pedido> findAll();
+	public List<Pedido> encotrarPedidos();
 	
 	
 

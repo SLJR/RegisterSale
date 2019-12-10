@@ -64,9 +64,11 @@ public class PedidoController {
 		}
 	}
 	
+	
 	@GetMapping
 	public ResponseEntity<List<Pedido>> findAll(){
-		return ResponseEntity.ok(this.pedidoService.findAll());
+		LOGGER.info("Tamaño: "+ResponseEntity.ok(this.pedidoService.encotrarPedidos().size()));
+		return ResponseEntity.ok(this.pedidoService.encotrarPedidos());
 	}
 
 	
