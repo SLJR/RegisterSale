@@ -15,8 +15,15 @@ public class PedidoDTO {
 //	private String mesPedido;
 	private String horaPedido;
 	private Date fechaEntraga;
+	private String status;
 	private Cliente idCliente;
 	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
 	public Long getIdPedido() {
 		return idPedido;

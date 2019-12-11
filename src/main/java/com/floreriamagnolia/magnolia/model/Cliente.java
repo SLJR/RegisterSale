@@ -39,20 +39,7 @@ public class Cliente implements Serializable {
 	@Email
 	private String correoCli;
 	@OneToMany(mappedBy="cliente") 	
-
-	//@OneToMany(mappedBy="cliente",targetEntity = Pedido.class,cascade =CascadeType.ALL,fetch = FetchType.LAZY)
-	
-	/*
-	 * private List<Pedido> pedido;
-	 * 
-	 * 
-	 * 
-	 * public List<Pedido> getPedido() { return pedido; }
-	 * 
-	 * public void setPedido(List<Pedido> pedido) { this.pedido = pedido; }
-	 */
 	 
-
 	public Long getIdCliente() {
 		return idCliente;
 	}

@@ -38,6 +38,8 @@ public class Pedido implements Serializable{
 	@Temporal(TemporalType.DATE)
 	@Column(name="fechaEntraga")
 	private Date fechaEntraga;
+	@Column(name="status")
+	private String status;
 	//@Column(name="idCliente")
 	//@ManyToOne(targetEntity = Cliente.class,fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	//@JoinColumn(name="idCliente")
@@ -83,7 +85,12 @@ public class Pedido implements Serializable{
 		this.fechaEntraga = fechaEntraga;
 	}
 
-	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	
 
 

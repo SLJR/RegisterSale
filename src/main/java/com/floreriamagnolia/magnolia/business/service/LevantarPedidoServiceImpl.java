@@ -37,6 +37,7 @@ public class LevantarPedidoServiceImpl implements ILevantarPedidoService {
 		pedido.setDescripcionPedido(levantarPedidoDTO.getDescripcionPedido());
 		pedido.setHoraPedido(levantarPedidoDTO.getHoraPedido());
 		pedido.setFechaEntraga(levantarPedidoDTO.getFechaEntraga());
+		pedido.setStatus("Activo");//pedidoDto.getStatus());
 		pedido.setCliente(cliente);
 		this.clienteRepo.save(cliente);
 		this.pedidoRepo.save(pedido);

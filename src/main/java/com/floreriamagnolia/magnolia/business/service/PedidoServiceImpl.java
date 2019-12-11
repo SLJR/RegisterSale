@@ -32,6 +32,7 @@ public class PedidoServiceImpl implements IPedidoService{
 		pedido.setDescripcionPedido(pedidoDto.getDescripcionPedido());
 		pedido.setHoraPedido(pedidoDto.getHoraPedido());
 		pedido.setFechaEntraga(pedidoDto.getFechaEntraga());
+		pedido.setStatus("Activo");//pedidoDto.getStatus());
 		pedido.setCliente(cliente);
 		return this.repository.save(pedido);
 	}
